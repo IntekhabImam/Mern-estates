@@ -43,7 +43,10 @@ export default function SignUp() {
   };
   return (
     <div className='p-3 max-w-lg mx-auto'>
-      <h1 className='text-3xl text-center font-semibold my-7'>Sign Up</h1>
+     <div className='flex flex-col text-center gap-0 mb-10 mt-10'>
+      <h1 className='text-3xl font-semibold '>Create an Accout</h1>
+      <h3 className='text-[#6B7294] opacity-80 '>Get started for free!</h3>
+     </div>
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
         <input
           type='text'
@@ -71,7 +74,7 @@ export default function SignUp() {
           disabled={loading}
           className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
         >
-          {loading ? 'Loading...' : 'Sign Up'}
+          {loading ? 'Loading...' : 'SIGN UP'}
         </button>
       </form>
       <div className='flex gap-2 mt-5'>
